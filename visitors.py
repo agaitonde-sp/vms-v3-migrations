@@ -24,6 +24,7 @@ def process(inputDf):
     visitors["email"] = inputDf["email"].apply(lambda x: x if x is not np.nan else "")
     visitors["phone"] = inputDf["phone"].apply(lambda x: x if x is not np.nan else "")
     visitors["picUrl"] = inputDf["picUrl"].apply(lambda x: x if x is not np.nan else "")
+    visitors["visitorPhotoThumbnail"] = ""
     visitors["createdAt"] = inputDf["createdAt"]
     visitors["updatedAt"] = inputDf["updatedAt"]
 
